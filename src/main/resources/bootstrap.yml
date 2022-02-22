@@ -1,0 +1,16 @@
+server:
+  port: 8090
+spring:
+  security:
+    user:
+      name: nttdata
+      password: nttd4t4
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/uCrover/nttdata-config-server.git
+          default-label: "main"
+          searchPaths: /config-data
+  application:
+    name: config-service
